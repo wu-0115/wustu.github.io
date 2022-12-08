@@ -10,7 +10,7 @@
 
 # javaWeb学习
 
-学习笔记来自黑马视频 https://www.bilibili.com/video/BV1Qf4y1T7Hx?p=84&vd_source=e7a09951d37607afc03b417da4b7958a</a>
+学习笔记来自黑马视频(javaWeb) https://www.bilibili.com/video/BV1Qf4y1T7Hx?p=84&vd_source=e7a09951d37607afc03b417da4b7958a</a>
 
 ## SpringBoot2 基础教程
 
