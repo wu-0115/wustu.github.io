@@ -24,9 +24,9 @@ Objects，普通的Java对象）映射成数据库中的记录
 
 MyBatis下载地址：https://github.com/mybatis/mybatis-3
 
-![1](img\1.png)
+![1](img/1.png)
 
-![2](img\2.png)
+![2](img/2.png)
 
 ### 1.4、和其它持久化层技术对比
 
@@ -264,7 +264,7 @@ System.out.println("结果："+result);
 	<appender name="STDOUT" class="org.apache.log4j.ConsoleAppender">
 		<param name="Encoding" value="UTF-8" />
 		<layout class="org.apache.log4j.PatternLayout">
-			<param name="ConversionPattern" value="%-5p %d{MM-dd HH:mm:ss,SSS}%m (%F:%L) \n" />
+			<param name="ConversionPattern" value="%-5p %d{MM-dd HH:mm:ss,SSS}%m (%F:%L) /n" />
 		</layout>
 	</appender>
 	<logger name="java.sql">
@@ -1212,7 +1212,7 @@ SqlSession关闭之后，一级缓存中的数据会写入二级缓存
 <ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:noNamespaceSchemaLocation="../config/ehcache.xsd">
 	<!-- 磁盘保存路径 -->
-	<diskStore path="D:\atguigu\ehcache"/>
+	<diskStore path="D:/atguigu/ehcache"/>
 	<defaultCache
         maxElementsInMemory="1000"
         maxElementsOnDisk="10000000"
@@ -1370,16 +1370,16 @@ xsi:noNamespaceSchemaLocation="../config/ehcache.xsd">
 						password="123456">
 		</jdbcConnection>
 		<!-- javaBean的生成策略-->
-		<javaModelGenerator targetPackage="com.atguigu.mybatis.pojo"targetProject=".\src\main\java">
+		<javaModelGenerator targetPackage="com.atguigu.mybatis.pojo"targetProject="./src/main/java">
             <property name="enableSubPackages" value="true" />
             <property name="trimStrings" value="true" />
 		</javaModelGenerator>
 		<!-- SQL映射文件的生成策略 -->
-		<sqlMapGenerator targetPackage="com.atguigu.mybatis.mapper"targetProject=".\src\main\resources">
+		<sqlMapGenerator targetPackage="com.atguigu.mybatis.mapper"targetProject="./src/main/resources">
 			<property name="enableSubPackages" value="true" />
 		</sqlMapGenerator>
 		<!-- Mapper接口的生成策略 -->
-		<javaClientGenerator type="XMLMAPPER"targetPackage="com.atguigu.mybatis.mapper" targetProject=".\src\main\java">
+		<javaClientGenerator type="XMLMAPPER"targetPackage="com.atguigu.mybatis.mapper" targetProject="./src/main/java">
 			<property name="enableSubPackages" value="true" />
 		</javaClientGenerator>
         <!-- 逆向分析的表 -->
@@ -1393,11 +1393,11 @@ xsi:noNamespaceSchemaLocation="../config/ehcache.xsd">
 
 ### ④执行MBG插件的generate目标
 
-![3](img\3.png)
+![3](img/3.png)
 
 ### ⑤效果
 
-![4](img\4.png)
+![4](img/4.png)
 
 ## 11.2、QBC查询
 

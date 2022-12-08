@@ -103,7 +103,7 @@ Spring版本：5.3.1
 
 传递性导入。
 
-![29](img\29.png)
+![29](img/29.png)
 
 ## 2.3、配置web.xml
 
@@ -739,7 +739,7 @@ public String testHello(){
 }
 ```
 
-![30](img\30.png)
+![30](img/30.png)
 
 ## 6.2、转发视图
 
@@ -758,7 +758,7 @@ public String testForward(){
 }
 ```
 
-![31](img\31.png)
+![31](img/31.png)
 
 ## 6.3、重定向视图
 
@@ -777,7 +777,7 @@ public String testRedirect(){
 }
 ```
 
-![32](img\32.png)
+![32](img/32.png)
 
 > 注：
 >
@@ -1810,7 +1810,7 @@ RedirectView
 
 DispatcherServlet 本质上是一个 Servlet，所以天然的遵循 Servlet 的生命周期。所以宏观上是 Servlet生命周期来进行调度。
 
-![33](img\33.png)
+![33](img/33.png)
 
 ### ①初始化WebApplicationContext
 
@@ -2155,9 +2155,9 @@ private void processDispatchResult(HttpServletRequest request,HttpServletRespons
 
 ## 14.4、SpringMVC的执行流程
 
-\1) 用户向服务器发送请求，请求被SpringMVC 前端控制器 DispatcherServlet捕获。
+/1) 用户向服务器发送请求，请求被SpringMVC 前端控制器 DispatcherServlet捕获。
 
-\2) DispatcherServlet对请求URL进行解析，得到请求资源标识符（URI），判断请求URI对应的映射：
+/2) DispatcherServlet对请求URL进行解析，得到请求资源标识符（URI），判断请求URI对应的映射：
 
 a) 不存在
 
@@ -2165,29 +2165,29 @@ i. 再判断是否配置了mvc:default-servlet-handler
 
 ii. 如果没配置，则控制台报映射查找不到，客户端展示404错误
 
-![34](img\34.png)
+![34](img/34.png)
 
-![35](img\35.png)
+![35](img/35.png)
 
 iii. 如果有配置，则访问目标资源（一般为静态资源，如：JS,CSS,HTML），找不到客户端也会展示404
 
 错误
 
-![36](img\36.png)
+![36](img/36.png)
 
-![37](img\37.png)
+![37](img/37.png)
 
 b) 存在则执行下面的流程
 
-\3) 根据该URI，调用HandlerMapping获得该Handler配置的所有相关的对象（包括Handler对象以及
+/3) 根据该URI，调用HandlerMapping获得该Handler配置的所有相关的对象（包括Handler对象以及
 
 Handler对象对应的拦截器），最后以HandlerExecutionChain执行链对象的形式返回。
 
-\4) DispatcherServlet 根据获得的Handler，选择一个合适的HandlerAdapter。
+/4) DispatcherServlet 根据获得的Handler，选择一个合适的HandlerAdapter。
 
-\5) 如果成功获得HandlerAdapter，此时将开始执行拦截器的preHandler(…)方法【正向】
+/5) 如果成功获得HandlerAdapter，此时将开始执行拦截器的preHandler(…)方法【正向】
 
-\6) 提取Request中的模型数据，填充Handler入参，开始执行Handler（Controller)方法，处理请求。
+/6) 提取Request中的模型数据，填充Handler入参，开始执行Handler（Controller)方法，处理请求。
 
 在填充Handler的入参过程中，根据你的配置，Spring将帮你做一些额外的工作：
 
@@ -2201,19 +2201,19 @@ c) 数据格式化：对请求消息进行数据格式化。 如将字符串转�
 
 d) 数据验证： 验证数据的有效性（长度、格式等），验证结果存储到BindingResult或Error中
 
-\7) Handler执行完成后，向DispatcherServlet 返回一个ModelAndView对象。
+/7) Handler执行完成后，向DispatcherServlet 返回一个ModelAndView对象。
 
-\8) 此时将开始执行拦截器的postHandle(...)方法【逆向】。
+/8) 此时将开始执行拦截器的postHandle(...)方法【逆向】。
 
-\9) 根据返回的ModelAndView（此时会判断是否存在异常：如果存在异常，则执行
+/9) 根据返回的ModelAndView（此时会判断是否存在异常：如果存在异常，则执行
 
 HandlerExceptionResolver进行异常处理）选择一个适合的ViewResolver进行视图解析，根据Model
 
 和View，来渲染视图。
 
-\10) 渲染视图完毕执行拦截器的afterCompletion(…)方法【逆向】。
+/10) 渲染视图完毕执行拦截器的afterCompletion(…)方法【逆向】。
 
-\11) 将渲染结果返回给客户端。
+/11) 将渲染结果返回给客户端。
 
 # 四、SSM整合
 
@@ -2526,7 +2526,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     <appender name="STDOUT" class="org.apache.log4j.ConsoleAppender">
         <param name="Encoding" value="UTF-8" />
         <layout class="org.apache.log4j.PatternLayout">
-            <param name="ConversionPattern" value="%-5p %d{MM-dd HH:mm:ss,SSS} %m (%F:%L) \n" />
+            <param name="ConversionPattern" value="%-5p %d{MM-dd HH:mm:ss,SSS} %m (%F:%L) /n" />
         </layout>
     </appender>
     <logger name="java.sql">
