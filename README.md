@@ -1,8 +1,5 @@
 # JAVA学习笔记
 
-#### 介绍
-picture-master  存储使用的图片
-
 ## MySQL 基础篇
 
 学习摘录笔记来自尚硅谷-宋红康 (MySQL数据库教程) <a>https://www.bilibili.com/video/BV1iq4y1u7vj</a>
