@@ -13,6 +13,4 @@ picture-master  存储使用的图片
 
 ## SpringBoot2 基础教程
 
-https://github.com/codinglin/SpringBoot2Notes
-
 学习摘录笔记来自尚硅谷-雷神（SpringBoot2零基础入门教程）https://www.bilibili.com/video/BV19K4y1L7MT
